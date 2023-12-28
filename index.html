@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Wedding Card Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+<div class="box">
+   
+    <img src="S.jpg">
+        <h2>Wedding Ceremony</h2>
+        <p>TO LOVE , LAUGHTER AND <br> HAPPILY EVER AFTER!</p>
+    <div id="weddingCard" contenteditable="true">
+            <h1 >Sagar<br>& <br>Sravanthi</h1>
+     </div>
+    
+        <div style="text-align: center;">
+            <p>We're getting married!</p>
+            <p>Join us for a celebration of love.</p>
+            <p class="date">Date: January 1,2024</p>
+        
+        </div>
+</div>
+
+    <div id="controls">
+       
+        <label for="textColor">Text Color:</label>
+        <input type="color" id="textColor" onchange="changeTextColor()"><br>
+
+        <label for="textSize">Text Size:</label>
+        <input type="range" id="textSize" min="10" max="50" value="16" onchange="changeTextSize()"><br>
+
+            <label for="fontFamily">Font Family:</label>
+            <select id="fontFamily" onchange="changeFontFamily()">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Courier New', monospace">Courier New</option>
+            </select>
+
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
